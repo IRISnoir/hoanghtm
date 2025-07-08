@@ -185,8 +185,6 @@ body {
 /**/
 
 .wrapper{
-  position: relative;
-  left: 30px;
   padding: 25px;
   border-radius: 10px;
   background: #F8F8F8;
@@ -202,6 +200,8 @@ body {
   width: 400px;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+  left: 30px;
 }
 .cards .card{
   cursor: pointer;
