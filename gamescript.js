@@ -1,6 +1,9 @@
 const cards = document.querySelectorAll(".card");
 
 let matched = 0;
+
+let move = 0;
+
 let cardOne, cardTwo;
 let disableDeck = false;
 
@@ -19,6 +22,7 @@ function flipCard({target: clickedCard}) {
 }
 
 function matchCards(img1, img2) {
+    move++;
     if(img1 === img2) {
         matched++;
         if(matched == 8) {
