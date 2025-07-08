@@ -49,6 +49,7 @@ function matchCards(img1, img2) {
 }
 
 function shuffleCard() {
+    move=0;
     matched = 0;
     disableDeck = false;
     cardOne = cardTwo = "";
