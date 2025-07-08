@@ -200,8 +200,7 @@ body {
   width: 400px;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: relative;
-  left: 30px;
+  align-items: center;
 }
 .cards .card{
   cursor: pointer;
