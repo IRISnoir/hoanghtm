@@ -1,3 +1,4 @@
+
 const sidebarToggleBtns = document.querySelectorAll(".sidebar-toggle");
 const sidebar = document.querySelector(".sidebar");
 const searchForm = document.querySelector(".search-form");
@@ -45,9 +46,7 @@ searchForm.addEventListener("click", () => {
 // Expand sidebar by default on large screens
 if (window.innerWidth > 768) sidebar.classList.remove("collapsed");
 
-
-//////////////////////////////////////////////////////////////////////
-
+// Handle content switching when clicking on menu items
 const contentSections = document.querySelectorAll(".main-content");
 
 menuLinks.forEach(link => {
