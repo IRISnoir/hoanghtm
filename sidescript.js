@@ -48,6 +48,7 @@ if (window.innerWidth > 768) sidebar.classList.remove("collapsed");
 
 //////////////////////////////////////////////////////////////////////
 
+const contentSections = document.querySelectorAll(".main-content");
 
 menuLinks.forEach(link => {
   link.addEventListener("click", e => {
