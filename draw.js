@@ -1,3 +1,4 @@
+
 const canvas = document.querySelector("canvas"),
 toolBtns = document.querySelectorAll(".tool"),
 fillColor = document.querySelector("#fill-color"),
@@ -22,12 +23,22 @@ const setCanvasBackground = () => {
     ctx.fillStyle = selectedColor; // setting fillstyle back to the selectedColor, it'll be the brush color
 }
 
-window.addEventListener("load", () => {
-    // setting canvas width/height.. offsetwidth/height returns viewable width/height of an element
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
+window.addEventListener("DOMContentLoaded", () => {
+    // Đặt kích thước tuyệt đối cho canvas để tránh scale sai
+    const fixedWidth = 800;
+    const fixedHeight = 600;
+
+    canvas.width = fixedWidth;
+    canvas.height = fixedHeight;
+
+    // Đồng bộ hiển thị ngoài (CSS) nếu muốn
+    canvas.style.width = fixedWidth + "px";
+    canvas.style.height = fixedHeight + "px";
+
     setCanvasBackground();
 });
+
+
 
 const drawRect = (e) => {
     // if fillColor isn't checked draw a rect with border else draw rect with background
